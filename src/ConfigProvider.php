@@ -8,7 +8,7 @@ declare(strict_types=1);
  * @contact  mrpzx001@gmail.com
  * @license  https://github.com/he426100/hyperf-user-relation/blob/master/LICENSE
  */
-namespace He426100;
+namespace He426100\UserRelation;
 
 class ConfigProvider
 {

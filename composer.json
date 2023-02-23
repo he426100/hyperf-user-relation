@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "He426100\\": "src/"
+            "He426100\\UserRelation\\": "src/"
         }
     },
     "config": {
