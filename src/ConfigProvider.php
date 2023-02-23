@@ -15,19 +15,8 @@ class ConfigProvider
     public function __invoke(): array
     {
         return [
-            'dependencies' => [
-            ],
-            'commands' => [
-            ],
-            'annotations' => [
-                'scan' => [
-                    'paths' => [
-                        __DIR__,
-                    ],
-                    'class_map' => [
-                    ],
-                ],
-            ],
+            'listeners' => [],
+            'aspects' => [],
             'publish' => [
                 [
                     'id' => 'user-relation',
