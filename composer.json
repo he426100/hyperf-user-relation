@@ -35,7 +35,7 @@
     },
     "extra": {
         "hyperf": {
-            "config": "He426100\\ConfigProvider"
+            "config": "He426100\\UserRelation\\ConfigProvider"
         }
     }
 }
