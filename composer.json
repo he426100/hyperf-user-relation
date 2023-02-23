@@ -1,0 +1,41 @@
+{
+    "name": "he426100/hyperf-user-relation",
+    "type": "library",
+    "description": "hyperf上下级关系组件",
+    "keywords": [
+        "hyperf"
+    ],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "he426100",
+            "email": "mrpzx001@gmail.com"
+        }
+    ],
+    "require": {
+        "hyperf/config": "~3.0.0",
+        "hyperf/database": "~3.0.0",
+        "hyperf/db-connection": "~3.0.0"
+    },
+    "require-dev": {
+        "friendsofphp/php-cs-fixer": "^3.8",
+        "phpstan/phpstan": "^1.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "He426100\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "scripts": {
+        "analyse": "phpstan analyse --memory-limit 1024M -l 0 ./src",
+        "cs-fix": "php-cs-fixer fix $1"
+    },
+    "extra": {
+        "hyperf": {
+            "config": "He426100\\ConfigProvider"
+        }
+    }
+}
