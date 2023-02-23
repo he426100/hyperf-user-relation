@@ -19,7 +19,7 @@ class ConfigProvider
             'aspects' => [],
             'publish' => [
                 [
-                    'id' => 'user-relation',
+                    'id' => 'config',
                     'description' => 'user-relation-config',
                     'source' => __DIR__ . '/../publish/user_relation.php',
                     'destination' => BASE_PATH . '/config/autoload/user_relation.php',

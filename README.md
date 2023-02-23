@@ -2,6 +2,21 @@
 
 受[jtar-hyperf-user-node](https://github.com/taobali32/jtar-hyperf-user-node)启发，把自己常用的用户关系实现发出来
 
+## Installation
+
+- Request
+
+```bash
+composer require he426100/hyperf-user-relation
+```
+
+- Publish
+
+```bash
+php bin/hyperf.php vendor:publish he426100/hyperf-user-relation
+```
+
+
 用户关系表参考  
 ```
 CREATE TABLE `user_relation`  (
