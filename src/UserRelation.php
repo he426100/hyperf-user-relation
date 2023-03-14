@@ -28,7 +28,7 @@ trait UserRelation
             throw new \Exception('上下级关系不正确');
         }
         /** @var Model */
-        $relationModel = new (config('user_relation.user_relation_model'));
+        $relationModel = config('user_relation.user_relation_model');
 
         $lists = [];
         // 建立跟上级的关系
@@ -84,7 +84,7 @@ trait UserRelation
     {
         return Db::transaction(static function () use ($user_id) {
             /** @var Model */
-            $relationModel = new (config('user_relation.user_relation_model'));
+            $relationModel = config('user_relation.user_relation_model');
 
             // 先跟原来的上级们断掉关系
             $relationModel::query()->where('user_id', $user_id)->delete();
@@ -103,7 +103,7 @@ trait UserRelation
     public function canSetParent(int $user_id, int $parent_id): bool
     {
         /** @var Model */
-        $relationModel = new (config('user_relation.user_relation_model'));
+        $relationModel = config('user_relation.user_relation_model');
 
         if ($parent_id == $user_id) { // 不能把自己设为上级
             return false;
