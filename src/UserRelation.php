@@ -12,6 +12,7 @@ namespace He426100\UserRelation;
 
 use Hyperf\Database\Model\Model;
 use Hyperf\DbConnection\Db;
+use function Hyperf\Config\config;
 
 trait UserRelation
 {
